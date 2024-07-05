@@ -24,3 +24,4 @@ let someNumber =  10
 let StringNumber = String(someNumber)
 console.log(StringNumber);
 console.log(typeof StringNumber);
+
