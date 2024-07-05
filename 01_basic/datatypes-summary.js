@@ -34,3 +34,25 @@ const myFunction  = function(){
 }
 
 console.log(typeof myFunction); //it returns objects but it is actually called as function objects
+
+// Stack (Primitive), Heap (Non-primitive) ===>
+// In stack we get the copy of the variable 
+// In heap we get the referece of the variable
+let myName = "Arnab Manna"
+    
+let anotherName = myName;
+anotherName = "arnab"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "arnab@google.com"
+console.log(userOne.email)
+console.log(userTwo.email)
