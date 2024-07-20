@@ -5,6 +5,10 @@
 
 ### Solution code
 
+
+<h5>Project 1 - color Changer 🔥:
+
+
 ```javascript
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
@@ -27,5 +31,32 @@ buttons.forEach(function (button) {
       body.style.backgroundColor = eve.target.id;
     }
   });
+});
+```
+
+
+<h5> Project 2 - BMI Generator ☕️ : 
+
+```javascript
+const form = document.querySelector('form');
+// this usecase will give you empty value
+// const height = parseInt(document.querySelector('#height').value)
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = `Please give a valid height ${height}`;
+  } else if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = `Please give a valid height ${weight}`;
+  } else {
+    const bmi = (weight / ((height * height) / 1000)).toFixed(2);
+    // show the result
+    results.innerHTML = `<span>${bmi}</span>`;
+  }
 });
 ```
