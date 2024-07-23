@@ -1,12 +1,12 @@
 ### Projects related to DOM
 
 ## project link
-[click here] ()
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
-### Solution code
+# Solution code
 
 
-<h5>Project 1 - color Changer 🔥:
+## Project 1 - color Changer 🔥:
 
 
 ```javascript
@@ -35,7 +35,7 @@ buttons.forEach(function (button) {
 ```
 
 
-<h5> Project 2 - BMI Generator ☕️ : 
+## Project 2 - BMI Generator ☕️ : 
 
 ```javascript
 const form = document.querySelector('form');
@@ -61,7 +61,7 @@ form.addEventListener('submit', function (e) {
 });
 ```
 
-<h5>Project 3 -Digital Clock 😎:
+##Project 3 -Digital Clock 😎:
 
 ```javascript
 const clock = document.getElementById('clock');
@@ -74,7 +74,7 @@ setInterval(function(){
 }, 1000)
 ```
 
-<h5>Project 4 - Guess the number 🤨
+## Project 4 - Guess the number 🤨
 
 ```javascript
 
@@ -170,9 +170,4 @@ function newGame() {
     playGame = true;
   });
 }
-
-
-
-
-
 ```
